@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+                            <html lang="es">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Mi Web</title>
+                                <link rel="stylesheet" href="styles.css">
+                            </head>
+                            <body>
+                                <header>
+                                    <h1>Bienvenido a Mi Web</h1>
+                                    <nav>
+                                        <ul>
+                                            <li><a href="#home">Inicio</a></li>
+                                            <li><a href="#about">Sobre Nosotros</a></li>
+                                            <li><a href="#services">Servicios</a></li>
+                                            <li><a href="#gallery">Galería</a></li>
+                                            <li><a href="#contact">Contacto</a></li>
+                                        </ul>
+                                    </nav>
+                                </header>
+                            
+                                <section id="home">
+                                    <h2>Bienvenido a nuestro sitio web</h2>
+                                    <p>¡Descubre todo lo que tenemos para ti!</p>
+                                </section>
+                            
+                                <section id="about">
+                                    <h2>Sobre Nosotros</h2>
+                                    <p>Somos una empresa dedicada a...</p>
+                                </section>
+                            
+                                <section id="services">
+                                    <h2>Servicios</h2>
+                                    <p>Ofrecemos una variedad de servicios para ti...</p>
+                                </section>
+                            
+                                <section id="gallery">
+                                    <h2>Galería</h2>
+                                    <div class="gallery-container">
+                                        <div class="gallery-item" onclick="openModal('img1')">
+                                            <img src="https://via.placeholder.com/150" alt="Imagen 1">
+                                        </div>
+                                        <div class="gallery-item" onclick="openModal('img2')">
+                                            <img src="https://via.placeholder.com/150" alt="Imagen 2">
+                                        </div>
+                                        <div class="gallery-item" onclick="openModal('img3')">
+                                            <img src="https://via.placeholder.com/150" alt="Imagen 3">
+                                        </div>
+                                        <!-- Agregar más imágenes aquí -->
+                                    </div>
+                            
+                                    <!-- Modal para imagen en tamaño completo -->
+                                    <div id="imageModal" class="modal">
+                                        <span class="close" onclick="closeModal()">&times;</span>
+                                        <img id="modalImg" src="" alt="">
+                                    </div>
+                                </section>
+                            
+                                <section id="contact">
+                                    <h2>Contacto</h2>
+                                    <form id="contactForm">
+                                        <label for="name">Nombre:</label>
+                                        <input type="text" id="name" name="name" required><br><br>
+                            
+                                        <label for="email">Correo electrónico:</label>
+                                        <input type="email" id="email" name="email" required><br><br>
+                            
+                                        <label for="message">Mensaje:</label><br>
+                                        <textarea id="message" name="message" required></textarea><br><br>
+                            
+                                        <button type="submit">Enviar</button>
+                                    </form>
+                                    <div id="responseMessage"></div>
+                                </section>
+                            
+                                <footer>
+                                    <p>&copy; 2025 Mi Web</p>
+                                </footer>
+                            
+                                <script src="script.js"></script>
+                            </body>
+                            </html>
+                                                                                
